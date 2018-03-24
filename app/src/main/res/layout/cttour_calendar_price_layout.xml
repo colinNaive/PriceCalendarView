@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <!--头部-->
+    <com.ctrip.pricecalendar.component.CustomHorizontalScrollView
+        android:id="@+id/horizontal_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="#f9faf9"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#f9faf9"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/header_calendar"
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:background="#f9faf9"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+            <com.ctrip.pricecalendar.component.indicatorView.IndicatorView
+                android:id="@+id/indicator"
+                android:layout_width="match_parent"
+                android:layout_height="2dp" />
+        </LinearLayout>
+    </com.ctrip.pricecalendar.component.CustomHorizontalScrollView>
+
+    <!--顶部的星期-->
+    <LinearLayout
+        android:id="@+id/week_layout"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_below="@id/horizontal_scrollview"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="日"
+            android:textColor="#ff3513"
+            android:textSize="8sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="一"
+            android:textColor="#4D4D4D"
+            android:textSize="8sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="二"
+            android:textColor="#4D4D4D"
+            android:textSize="8sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="三"
+
+            android:textColor="#4D4D4D"
+            android:textSize="8sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="四"
+            android:textColor="#4D4D4D"
+            android:textSize="8sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="五"
+            android:textColor="#4D4D4D"
+            android:textSize="8sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="六"
+            android:textColor="#ff3513"
+            android:textSize="8sp" />
+    </LinearLayout>
+
+    <!--日历ViewPager-->
+    <com.ctrip.pricecalendar.component.CustomViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/week_layout" />
+
+    <!--加载-->
+    <LinearLayout
+        android:id="@+id/price_calendar_loading"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="#eeeeee"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <ProgressBar
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:indeterminateDrawable="@drawable/cttour_price_calendar_rotate" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="日历价格加载中..."
+            android:textColor="#111111"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+</RelativeLayout>

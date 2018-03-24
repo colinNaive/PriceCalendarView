@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.ctrip.pricecalendar.component.indicatorView.ScrollableIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/cttour_around_travel_border_bottom"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/indicator_content"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:background="#009fde" />
+    </com.ctrip.pricecalendar.component.indicatorView.ScrollableIndicator>
+</LinearLayout>

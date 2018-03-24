@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="90.33dp"
+    android:layout_height="match_parent"
+    android:background="#f9faf9"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="1月"
+        android:textColor="#666666"
+        android:textSize="11.52sp" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="3.67dp"
+        android:text="¥12334"
+        android:textColor="#ff6913"
+        android:textSize="9.6sp" />
+</LinearLayout>

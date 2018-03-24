@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="62dp"
+    android:background="@drawable/calendar_day_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/festival"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:text="情人节"
+        android:textColor="#ff3513"
+        android:textSize="9dp" />
+
+    <TextView
+        android:id="@+id/day_tv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="#111111"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:id="@+id/price_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:gravity="center|bottom"
+        android:text="¥ 336"
+        android:textColor="#666666"
+        android:textSize="8dp" />
+
+    <TextView
+        android:id="@+id/stock_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1.5dp"
+        android:layout_marginTop="0.5dp"
+        android:gravity="center|bottom"
+        android:text="充足"
+        android:textColor="#ff3513"
+        android:textSize="9dp" />
+
+</LinearLayout>
